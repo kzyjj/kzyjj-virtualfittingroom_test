@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/kzyjj-virtualfittingroom_test/static/css/main.40ee577d.chunk.css",
-    "main.js": "/kzyjj-virtualfittingroom_test/static/js/main.3fa29f0c.chunk.js",
-    "main.js.map": "/kzyjj-virtualfittingroom_test/static/js/main.3fa29f0c.chunk.js.map",
+    "main.js": "/kzyjj-virtualfittingroom_test/static/js/main.1ebac3ee.chunk.js",
+    "main.js.map": "/kzyjj-virtualfittingroom_test/static/js/main.1ebac3ee.chunk.js.map",
     "runtime-main.js": "/kzyjj-virtualfittingroom_test/static/js/runtime-main.859e25bf.js",
     "runtime-main.js.map": "/kzyjj-virtualfittingroom_test/static/js/runtime-main.859e25bf.js.map",
     "static/css/2.d8cb5cde.chunk.css": "/kzyjj-virtualfittingroom_test/static/css/2.d8cb5cde.chunk.css",
-    "static/js/2.4cda90b4.chunk.js": "/kzyjj-virtualfittingroom_test/static/js/2.4cda90b4.chunk.js",
-    "static/js/2.4cda90b4.chunk.js.map": "/kzyjj-virtualfittingroom_test/static/js/2.4cda90b4.chunk.js.map",
+    "static/js/2.82b5b36e.chunk.js": "/kzyjj-virtualfittingroom_test/static/js/2.82b5b36e.chunk.js",
+    "static/js/2.82b5b36e.chunk.js.map": "/kzyjj-virtualfittingroom_test/static/js/2.82b5b36e.chunk.js.map",
     "static/js/3.187e78a9.chunk.js": "/kzyjj-virtualfittingroom_test/static/js/3.187e78a9.chunk.js",
     "static/js/3.187e78a9.chunk.js.map": "/kzyjj-virtualfittingroom_test/static/js/3.187e78a9.chunk.js.map",
     "index.html": "/kzyjj-virtualfittingroom_test/index.html",
     "static/css/2.d8cb5cde.chunk.css.map": "/kzyjj-virtualfittingroom_test/static/css/2.d8cb5cde.chunk.css.map",
     "static/css/main.40ee577d.chunk.css.map": "/kzyjj-virtualfittingroom_test/static/css/main.40ee577d.chunk.css.map",
-    "static/js/2.4cda90b4.chunk.js.LICENSE.txt": "/kzyjj-virtualfittingroom_test/static/js/2.4cda90b4.chunk.js.LICENSE.txt",
+    "static/js/2.82b5b36e.chunk.js.LICENSE.txt": "/kzyjj-virtualfittingroom_test/static/js/2.82b5b36e.chunk.js.LICENSE.txt",
     "static/media/style.css": "/kzyjj-virtualfittingroom_test/static/media/DRESSING ROOM.9d110d80.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.859e25bf.js",
     "static/css/2.d8cb5cde.chunk.css",
-    "static/js/2.4cda90b4.chunk.js",
+    "static/js/2.82b5b36e.chunk.js",
     "static/css/main.40ee577d.chunk.css",
-    "static/js/main.3fa29f0c.chunk.js"
+    "static/js/main.1ebac3ee.chunk.js"
   ]
 }
