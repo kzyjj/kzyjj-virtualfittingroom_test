@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/kzyjj-virtualfittingroom_test/static/css/main.79fc6bd2.chunk.css",
-    "main.js": "/kzyjj-virtualfittingroom_test/static/js/main.60c13dc4.chunk.js",
-    "main.js.map": "/kzyjj-virtualfittingroom_test/static/js/main.60c13dc4.chunk.js.map",
-    "runtime-main.js": "/kzyjj-virtualfittingroom_test/static/js/runtime-main.c0afb75c.js",
-    "runtime-main.js.map": "/kzyjj-virtualfittingroom_test/static/js/runtime-main.c0afb75c.js.map",
+    "main.css": "/kzyjj-virtualfittingroom_test/static/css/main.40ee577d.chunk.css",
+    "main.js": "/kzyjj-virtualfittingroom_test/static/js/main.3fa29f0c.chunk.js",
+    "main.js.map": "/kzyjj-virtualfittingroom_test/static/js/main.3fa29f0c.chunk.js.map",
+    "runtime-main.js": "/kzyjj-virtualfittingroom_test/static/js/runtime-main.859e25bf.js",
+    "runtime-main.js.map": "/kzyjj-virtualfittingroom_test/static/js/runtime-main.859e25bf.js.map",
     "static/css/2.d8cb5cde.chunk.css": "/kzyjj-virtualfittingroom_test/static/css/2.d8cb5cde.chunk.css",
-    "static/js/2.2fa957c0.chunk.js": "/kzyjj-virtualfittingroom_test/static/js/2.2fa957c0.chunk.js",
-    "static/js/2.2fa957c0.chunk.js.map": "/kzyjj-virtualfittingroom_test/static/js/2.2fa957c0.chunk.js.map",
-    "static/js/3.cde80bc1.chunk.js": "/kzyjj-virtualfittingroom_test/static/js/3.cde80bc1.chunk.js",
-    "static/js/3.cde80bc1.chunk.js.map": "/kzyjj-virtualfittingroom_test/static/js/3.cde80bc1.chunk.js.map",
+    "static/js/2.4cda90b4.chunk.js": "/kzyjj-virtualfittingroom_test/static/js/2.4cda90b4.chunk.js",
+    "static/js/2.4cda90b4.chunk.js.map": "/kzyjj-virtualfittingroom_test/static/js/2.4cda90b4.chunk.js.map",
+    "static/js/3.187e78a9.chunk.js": "/kzyjj-virtualfittingroom_test/static/js/3.187e78a9.chunk.js",
+    "static/js/3.187e78a9.chunk.js.map": "/kzyjj-virtualfittingroom_test/static/js/3.187e78a9.chunk.js.map",
     "index.html": "/kzyjj-virtualfittingroom_test/index.html",
     "static/css/2.d8cb5cde.chunk.css.map": "/kzyjj-virtualfittingroom_test/static/css/2.d8cb5cde.chunk.css.map",
-    "static/css/main.79fc6bd2.chunk.css.map": "/kzyjj-virtualfittingroom_test/static/css/main.79fc6bd2.chunk.css.map",
-    "static/js/2.2fa957c0.chunk.js.LICENSE.txt": "/kzyjj-virtualfittingroom_test/static/js/2.2fa957c0.chunk.js.LICENSE.txt"
+    "static/css/main.40ee577d.chunk.css.map": "/kzyjj-virtualfittingroom_test/static/css/main.40ee577d.chunk.css.map",
+    "static/js/2.4cda90b4.chunk.js.LICENSE.txt": "/kzyjj-virtualfittingroom_test/static/js/2.4cda90b4.chunk.js.LICENSE.txt",
+    "static/media/style.css": "/kzyjj-virtualfittingroom_test/static/media/DRESSING ROOM.9d110d80.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.c0afb75c.js",
+    "static/js/runtime-main.859e25bf.js",
     "static/css/2.d8cb5cde.chunk.css",
-    "static/js/2.2fa957c0.chunk.js",
-    "static/css/main.79fc6bd2.chunk.css",
-    "static/js/main.60c13dc4.chunk.js"
+    "static/js/2.4cda90b4.chunk.js",
+    "static/css/main.40ee577d.chunk.css",
+    "static/js/main.3fa29f0c.chunk.js"
   ]
 }
