@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { chooseClothesAction } from '../Redux/actions/actions';
-import { Button,Alert,Card, Col, Container, Navbar, Nav, NavDropdown} from 'react-bootstrap';
+import { Button,Alert,Card, Col, Container, Navbar, Nav, NavDropdown, Row} from 'react-bootstrap';
 import {BrowserRouter, Routes, Route, Link} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import DressingRoom from '../DressingRoom/DressingRoom';
@@ -59,39 +59,58 @@ export default function Cover() {
       //fs.writeFileSync("public/images/upload.png", blob);
     }, 'image/webp', 0.8)
   }
-
     return (
-      <BrowserRouter>
-        <Navbar bg="light" expand="lg">
-          <Container>
-            <Navbar.Brand href="#home">Virtual DressingRoom</Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="me-auto">
-                <Nav.Link as={Link} to="/DressingRoom">進入試衣間</Nav.Link> 
-                <Nav.Link href="https://kzyjj.github.io/backgroundrm_test/" target="_blank">去背相片</Nav.Link>
-              </Nav>
-              <NavDropdown title="上傳你的衣服" id="basic-nav-dropdown">
-                <NavDropdown.Item>上傳上、下身 : 
-                  <div className="input">
-                      <input type="file" onClick={(e) => e.stopPropagation()} accept=".jpg, .png" id="imageUpLoad" name="imageUpLoad" onChange={imgUpload} />
-                  </div>
-                </NavDropdown.Item>
-                <NavDropdown.Item>上傳鞋子、包包 : 
-                  <div className="input">
-                      <input type="file" onClick={(e) => e.stopPropagation()} accept=".jpg, .png" id="imageUpLoad" name="imageUpLoad" onChange={imgUpload} />
-                  </div></NavDropdown.Item>
+      <Container>
+        <BrowserRouter>
+          <Navbar bg="light" expand="lg">
+            <Container>
+              <Navbar.Brand href="#home">Virtual DressingRoom</Navbar.Brand>
+              <Navbar.Toggle aria-controls="basic-navbar-nav" />
+              <Navbar.Collapse id="basic-navbar-nav">
+                <Nav className="me-auto" activeKey="/home"
+                  onSelect={() => <DressingRoom/>}>
+                  {/* <Nav.Link as={Link} to="/DressingRoom">進入試衣間</Nav.Link>  */}
+                  <Nav.Link href="/DressingRoom">進入試衣間</Nav.Link>
+                  {/* <Button href="/DressingRoom">Link</Button>  */}
+                  <Nav.Link href="https://kzyjj.github.io/backgroundrm_test/" target="_blank">去背相片</Nav.Link>
+                </Nav>
+                <NavDropdown title="上傳你的衣服" id="basic-nav-dropdown">
+                  <NavDropdown.Item>上傳上、下身 : 
+                    <div className="input">
+                        <input type="file" onClick={(e) => e.stopPropagation()} accept=".jpg, .png" id="imageUpLoad" name="imageUpLoad" onChange={imgUpload} />
+                    </div>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item>上傳鞋子、包包 : 
+                    <div className="input">
+                        <input type="file" onClick={(e) => e.stopPropagation()} accept=".jpg, .png" id="imageUpLoad" name="imageUpLoad" onChange={imgUpload} />
+                    </div></NavDropdown.Item>
                 </NavDropdown>
-            </Navbar.Collapse>
-          </Container>
-        </Navbar>
-        <Container>
-            <div>
-              <Routes>
-                <Route path="/DressingRoom" element={<DressingRoom/>}/>
-              </Routes>
-            </div>
+              </Navbar.Collapse>
+            </Container>
+          </Navbar>
+              <div>
+                <Routes>
+                  <Route path="/DressingRoom" element={<DressingRoom/>}/>
+                </Routes>
+              </div>
+        </BrowserRouter>
+        <Row>
+          <div class="frame">
+            <img src="./firstpage.gif" alt="123"/>
+          </div>
+          <div class="frame">
+            <img src="./222.gif"/>
+          </div>
+          <div class="frame">
+            <img src="./333.gif"/>
+          </div>
+          <div class="frame">
+            <img src="./444.gif"/>
+          </div>
+          <div class="frame">
+            <img src="./555.gif"/>
+          </div>
+        </Row>
       </Container>
-      </BrowserRouter>
     );
   }

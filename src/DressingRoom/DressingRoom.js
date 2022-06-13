@@ -11,9 +11,7 @@ export default function DressingRoom() {
   return (
     <Container>
       <Row>
-        <Col className="col-12">
           <ProjectIntroduction />
-        </Col>
       </Row>
       <Row>
           <Model />

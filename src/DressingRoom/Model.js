@@ -5,11 +5,10 @@ import { useSelector } from 'react-redux';
 
 export default function Model() {
   const ModelReducer = useSelector((state) => state.ModelReducer);
-
   return (
     <Container>
       <Row>
-        <div className="contain">
+        <div className="contain" >
           <div
             className="bikinitop"
             style={{
@@ -18,7 +17,7 @@ export default function Model() {
               background: `url("${ModelReducer.topclothes}")`,
               backgroundRepeat:'no-repeat',
               position: 'absolute',
-              top: '-9%',
+              top: '3%',
               left: '-5%',
               zIndex: 3,
               transform: 'scale(0.5)',
@@ -32,7 +31,7 @@ export default function Model() {
               background: `url("${ModelReducer.botclothes}")`,
               backgroundRepeat:'no-repeat',
               position: 'absolute',
-              top: '30%',
+              top: '35%',
               left: '-5%',
               zIndex: 2,
               transform: 'scale(0.5)',
@@ -46,8 +45,8 @@ export default function Model() {
               background: `url("${ModelReducer.handbags}")`,
               backgroundRepeat:'no-repeat',
               position: 'absolute',
-              bottom: '30%',
-              right: '35%',
+              bottom: '15%',
+              right: '30%',
               transform: 'scale(0.5)',
               zIndex: 4,
             }}
@@ -60,8 +59,8 @@ export default function Model() {
               background: `url("${ModelReducer.shoes}")`,
               backgroundRepeat:'no-repeat',
               position: 'absolute',
-              top: '55%',
-              right: '35%',
+              top: '60%',
+              right: '30%',
               transform: 'scale(0.5)',
               zIndex: 1,
             }}
