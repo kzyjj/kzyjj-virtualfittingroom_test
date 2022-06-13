@@ -69,8 +69,8 @@ export default function Cover() {
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto" activeKey="/home"
                   onSelect={() => <DressingRoom/>}>
-                  {/* <Nav.Link as={Link} to="/DressingRoom">進入試衣間</Nav.Link>  */}
-                  <Nav.Link href="/DressingRoom">進入試衣間</Nav.Link>
+                  <Nav.Link as={Link} to="/DressingRoom">進入試衣間</Nav.Link> 
+                  {/* <Nav.Link href="/DressingRoom">進入試衣間</Nav.Link> */}
                   {/* <Button href="/DressingRoom">Link</Button>  */}
                   <Nav.Link href="https://kzyjj.github.io/backgroundrm_test/" target="_blank">去背相片</Nav.Link>
                 </Nav>
