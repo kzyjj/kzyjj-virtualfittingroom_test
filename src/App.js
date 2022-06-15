@@ -8,8 +8,8 @@ import {BrowserRouter, Routes, Route,} from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter>
       <div className="App">
+        <BrowserRouter>
         <switch>
             <Routes>
               <Route exact path="/" element={<Covertest/>}/>
@@ -18,8 +18,8 @@ function App() {
               <Route path="/DressingRoom" element={<DressingRoom/>}/>
             </Routes>
           </switch>
+          </BrowserRouter>
       </div>
-    </BrowserRouter>
   );
 }
 
