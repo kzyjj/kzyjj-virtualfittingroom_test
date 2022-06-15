@@ -9,7 +9,7 @@ export default function NavTab(props) {
     return navPills.map((item, index) => {
       return (
         <Nav.Item as="li" key={index}>
-          <Nav.Link as="a" btn-default data-toggle="pill" href={`#${item.tabName}`}>
+          <Nav.Link as="a" btn-default data-toggle="tab" href={`#${item.tabName}`}>
             {item.showName}
           </Nav.Link> 
         </Nav.Item> 
@@ -18,7 +18,7 @@ export default function NavTab(props) {
   };
   return (
     <div>
-      <Nav.Item as="ul"  className="nav nav-tabs justify-content-center">{renderNavTab()}</Nav.Item>
+      <Nav.Item as="ul" className="nav nav-tabs justify-content-center">{renderNavTab()}</Nav.Item>
     </div>
   );
 }
