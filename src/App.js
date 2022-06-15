@@ -8,18 +8,18 @@ import {BrowserRouter, Routes, Route,} from "react-router-dom";
 
 function App() {
   return (
+    <BrowserRouter>
       <div className="App">
-        <BrowserRouter>
         <switch>
-            <Routes>
-              <Route exact path="/" element={<Covertest/>}/>
-            </Routes>
-            <Routes>
-              <Route path="/DressingRoom" element={<DressingRoom/>}/>
-            </Routes>
-          </switch>
-          </BrowserRouter>
+          <Routes>
+            <Route exact path="/" element={<Covertest/>}/>
+          </Routes>
+          <Routes>
+            <Route path="/DressingRoom" element={<DressingRoom/>}/>
+          </Routes>
+        </switch>
       </div>
+  </BrowserRouter>
   );
 }
 

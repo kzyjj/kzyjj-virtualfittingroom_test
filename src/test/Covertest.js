@@ -6,6 +6,7 @@ import {BrowserRouter, Routes, Route, Link} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import DressingRoom from '../DressingRoom/DressingRoom';
 export default function Cover() {
+
     return (
       <Container>
         <Navbar bg="light" expand="lg">
