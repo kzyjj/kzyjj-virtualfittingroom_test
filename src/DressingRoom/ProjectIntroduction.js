@@ -57,7 +57,8 @@ export default function ProjectIntroduction() {
     }, 'image/webp', 0.8)
   }
   return (
-    <Card className="text-center">
+    <Card className="text-center" style={{ color:"#000" }}>
+      <Card.Img variant="top" src="\D2.gif"/>
       <Navbar bg="light" expand="lg">
       <Container>
         <Navbar.Brand href="#home">Virtual DressingRoom</Navbar.Brand>

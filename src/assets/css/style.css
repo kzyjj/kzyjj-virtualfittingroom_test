@@ -144,17 +144,3 @@ img{
   width: 100%;
   height: 100%;
 }
-
-.up img {
-  position: relative;
-  width: 350px;
-  height: 200px;
-  margin:auto;
-}
-
-.up{
-  width: 350px;
-  height: 135px;
-  margin: auto;
-  background-image: url("up.jpg");
-}
