@@ -23,19 +23,19 @@ export default function Cover() {
         </Navbar>
         <Row>
           <div class="frame">
-            <img src="./firstpage.gif" alt="123"/>
+            <img src="images/firstpage.gif" alt="123"/>
           </div>
           <div class="frame">
-            <img src="./222.gif"/>
+            <img src="images/222.gif"/>
           </div>
           <div class="frame">
-            <img src="./333.gif"/>
+            <img src="images/333.gif"/>
           </div>
           <div class="frame">
-            <img src="./444.gif"/>
+            <img src="images/444.gif"/>
           </div>
           <div class="frame">
-            <img src="./555.gif"/>
+            <img src="images/555.gif"/>
           </div>
         </Row>
       </Container>

@@ -58,7 +58,7 @@ export default function ProjectIntroduction() {
   }
   return (
     <Card className="text-center" style={{ color:"#000" }}>
-      <Card.Img variant="top" src="\D2.gif"/>
+      <Card.Img variant="top" src="images/D2.gif"/>
       <Navbar bg="light" expand="lg">
       <Container>
         <Navbar.Brand href="#home">Virtual DressingRoom</Navbar.Brand>
