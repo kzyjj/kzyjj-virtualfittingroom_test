@@ -1,6 +1,7 @@
 import React from 'react';
 import ProductItems from './ProductItems';
 import { useSelector } from 'react-redux';
+import { Button,Alert,Card, Col, Container, Navbar, Nav, NavDropdown, Row} from 'react-bootstrap';
 
 export default function ProductList() {
   const { topcloth, botcloth, shoes, handbags} = useSelector(
@@ -11,9 +12,9 @@ export default function ProductList() {
   const renderTopcloth = () => {
     return topcloth.map((item, index) => {
       return (
-        <div className="col-3" key={index}>
+        <Col className="col-3" key={index}>
           <ProductItems item={item} />
-        </div>
+        </Col>
       );
     });
   };
@@ -22,9 +23,9 @@ export default function ProductList() {
   const renderBotcloth = () => {
     return botcloth.map((item, index) => {
       return (
-        <div className="col-3" key={index}>
+        <Col className="col-3" key={index}>
           <ProductItems item={item} />
-        </div>
+        </Col>
       );
     });
   };
@@ -33,9 +34,9 @@ export default function ProductList() {
   const renderShoes = () => {
     return shoes.map((item, index) => {
       return (
-        <div className="col-3" key={index}>
+        <Col className="col-3" key={index}>
           <ProductItems item={item} />
-        </div>
+        </Col>
       );
     });
   };
@@ -44,15 +45,15 @@ export default function ProductList() {
   const renderHandbags = () => {
     return handbags.map((item, index) => {
       return (
-        <div className="col-3" key={index}>
+        <Col className="col-3" key={index}>
           <ProductItems item={item} />
-        </div>
+        </Col>
       );
     });
   };
 
   return (
-    <div className="well">
+    <Col className="well">
       <div className="tab-content">
         <div className="tab-pane container active" id="tabTopClothes">
           <div className="row w-100">{renderTopcloth()}</div>
@@ -67,6 +68,6 @@ export default function ProductList() {
           <div className="row w-100">{renderHandbags()}</div>
         </div>
       </div>
-    </div>
+    </Col>
   );
 }

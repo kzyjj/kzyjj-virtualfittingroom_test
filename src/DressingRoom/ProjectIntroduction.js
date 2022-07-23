@@ -73,7 +73,7 @@ export default function ProjectIntroduction() {
                   <input type="file" onClick={(e) => e.stopPropagation()} accept=".jpg, .png" id="imageUpLoad" name="imageUpLoad" onChange={imgUpload} />
               </div>
             </NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2">上傳上、下身 : 
+            <NavDropdown.Item href="#action/3.2">上傳鞋子、包包 : 
               <div className="input">
                   <input type="file" onClick={(e) => e.stopPropagation()} accept=".jpg, .png" id="imageUpLoad" name="imageUpLoad" onChange={imgUpload} />
               </div></NavDropdown.Item>

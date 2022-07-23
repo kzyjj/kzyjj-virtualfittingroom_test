@@ -8,7 +8,7 @@ export default function ProductItems(props) {
   const { item } = props;
   const dispatch = useDispatch();
   return (
-    <Card className="text-center">
+    <Card>
       <img src={item.imgSrc_jpg} alt="123" />
       <Button variant="secondary" size="sm"
         onClick={() => {
