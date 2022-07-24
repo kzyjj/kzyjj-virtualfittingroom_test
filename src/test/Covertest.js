@@ -5,8 +5,15 @@ import { Button,Alert,Card, Col, Container, Navbar, Nav, NavDropdown, Row} from 
 import {BrowserRouter, Routes, Route, Link} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import DressingRoom from '../DressingRoom/DressingRoom';
-export default function Cover() {
+import firebase from '../util/firebase';
 
+export default function Cover() {
+    const [user, setUser] = React.useState(null);
+    React.useEffect(() => {
+        firebase.auth().onAuthStateChanged((currentUser) => {
+            setUser(currentUser);
+        })
+    },[]);
     return (
       <Container>
         <Navbar bg="light" expand="lg">
@@ -15,15 +22,24 @@ export default function Cover() {
             <Navbar.Brand href="#home">Virtual DressingRoom</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="me-auto">
-                <Nav.Link as={Link} to="/DressingRoom">進入試衣間</Nav.Link> 
+              <Nav>
+                {user ? (
+                  <>
+                    <Nav.Link as={Link} to="/DressingRoom">進入試衣間</Nav.Link> 
+                    <Nav.Link onClick={() => firebase.auth().signOut()}>
+                      登出
+                    </Nav.Link>
+                  </>
+                ) : (
+                  <Nav.Link as={Link} to="/Signin">註冊/登入</Nav.Link> 
+                )}
               </Nav>
               </Navbar.Collapse>
           </Container>
         </Navbar>
         <Row>
           <div class="frame">
-            <img src="images/firstpage.gif" alt="123"/>
+            <img src="images/firstpage.gif"/>
           </div>
           <div class="frame">
             <img src="images/222.gif"/>
