@@ -39,7 +39,7 @@ export default function Cover() {
         </Navbar>
         <Row>
           <div class="frame">
-            <img src="images/firstpage.gif"/>
+            <img src="images/cv.gif"/>
           </div>
           <div class="frame">
             <img src="images/222.gif"/>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { Button,Alert,Card, Nav, Col, NavDropdown } from 'react-bootstrap';
+import { Nav} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 export default function NavTab(props) {

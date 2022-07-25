@@ -59,10 +59,24 @@ export default function Model() {
               background: `url("${ModelReducer.shoes}")`,
               backgroundRepeat:'no-repeat',
               position: 'absolute',
-              top: '60%',
+              top: '63%',
               right: '30%',
               transform: 'scale(0.5)',
               zIndex: 1,
+            }}
+          />
+          <div
+            className="uploadclothes"
+            style={{
+              width: 500,
+              height: 500,
+              background: `url("${ModelReducer.uploadclothes}")`,
+              backgroundRepeat:'no-repeat',
+              position: 'absolute',
+              top: '3%',
+              left: '-5%',
+              zIndex: 3,
+              transform: 'scale(0.5)',
             }}
           />
         </div>

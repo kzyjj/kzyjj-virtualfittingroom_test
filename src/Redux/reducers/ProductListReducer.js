@@ -196,10 +196,20 @@ const initialState = {
       imgSrc_png: './images/handbags/handbag3.png',
     },
   ],
+
+  uploadclothes: [
+    {
+      type: 'uploadclothes',
+      imgSrc_jpg: './images/handbags/handbag1.png',
+      imgSrc_png: './images/handbags/handbag1.png',
+
+    }
+  ],
 };
 
 const ProductListReducer = (state = initialState, action) => {
   return { ...state };
 };
+
 
 export default ProductListReducer;

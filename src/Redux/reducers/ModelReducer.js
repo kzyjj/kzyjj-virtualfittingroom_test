@@ -5,6 +5,7 @@ const initialState = {
   botclothes: '', 
   shoes: '',  
   handbags: '',
+  uploadclothes:'',
 };
 
 const ModelRenderer = (state = initialState, action) => {

@@ -6,12 +6,10 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 export default function Product() {
   return (
-    <Row>
-      <div className="row" style={{ padding: '10px' }}>
-          <NavTab />
+    <Row className="justify-content-md-center">
+      <div className="col-nav d-flex justify-content-center align-items-center" style={{ padding: '10px' }}>
+        <NavTab />
       </div>
-  </Row>
-
-
+    </Row>
   );
 }

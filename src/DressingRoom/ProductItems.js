@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { chooseClothesAction } from '../Redux/actions/actions';
-import { Button,Alert,Card, Col} from 'react-bootstrap';
+import { Button,Alert,Card, Col, Row} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 export default function ProductItems(props) {
@@ -9,13 +9,11 @@ export default function ProductItems(props) {
   const dispatch = useDispatch();
   return (
     <Card>
-      <img src={item.imgSrc_jpg} alt="123" />
-      <Button variant="secondary" size="sm"
+      <Button size="sm" variant="Link"
         onClick={() => {
           dispatch(chooseClothesAction(item));
         }}
-      >
-        試衣
+      ><img src={item.imgSrc_jpg} alt="123" />
       </Button>
     </Card>
   );

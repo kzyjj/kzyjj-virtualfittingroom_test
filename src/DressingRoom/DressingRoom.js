@@ -13,10 +13,10 @@ export default function DressingRoom() {
       <Row>
           <ProjectIntroduction />
       </Row>
-      <Row>
+      <Row className="justify-content-md-center">
           <Model />
           <Product />
-          <div className="row" style={{ padding: '10px 10px' }}>
+          <div className="col-pl d-flex justify-content-center align-items-center" style={{ padding: '10px 10px' }}>
             <ProductList />
           </div>
       </Row>

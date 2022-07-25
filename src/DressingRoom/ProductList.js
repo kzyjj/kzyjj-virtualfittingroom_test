@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 import { Button,Alert,Card, Col, Container, Navbar, Nav, NavDropdown, Row} from 'react-bootstrap';
 
 export default function ProductList() {
-  const { topcloth, botcloth, shoes, handbags} = useSelector(
+  const { topcloth, botcloth, shoes, handbags, uploadclothes, uploadothers} = useSelector(
     (state) => state.ProductListReducer
   );
 
@@ -12,7 +12,7 @@ export default function ProductList() {
   const renderTopcloth = () => {
     return topcloth.map((item, index) => {
       return (
-        <Col className="col-3" key={index}>
+        <Col className="col-4" key={index}>
           <ProductItems item={item} />
         </Col>
       );
@@ -23,7 +23,7 @@ export default function ProductList() {
   const renderBotcloth = () => {
     return botcloth.map((item, index) => {
       return (
-        <Col className="col-3" key={index}>
+        <Col className="col-4" key={index}>
           <ProductItems item={item} />
         </Col>
       );
@@ -34,7 +34,7 @@ export default function ProductList() {
   const renderShoes = () => {
     return shoes.map((item, index) => {
       return (
-        <Col className="col-3" key={index}>
+        <Col className="col-4" key={index}>
           <ProductItems item={item} />
         </Col>
       );
@@ -45,7 +45,17 @@ export default function ProductList() {
   const renderHandbags = () => {
     return handbags.map((item, index) => {
       return (
-        <Col className="col-3" key={index}>
+        <Col className="col-4" key={index}>
+          <ProductItems item={item} />
+        </Col>
+      );
+    });
+  };
+
+  const renderUploadClothes = () => {
+    return uploadclothes.map((item, index) => {
+      return (
+        <Col className="col-4" key={index}>
           <ProductItems item={item} />
         </Col>
       );
@@ -53,21 +63,25 @@ export default function ProductList() {
   };
 
   return (
-    <Col className="well">
-      <div className="tab-content">
-        <div className="tab-pane container active" id="tabTopClothes">
-          <div className="row w-100">{renderTopcloth()}</div>
+      <Col className="well">
+        <div className="tab-content">
+          <div className="tab-pane container active" id="tabTopClothes">
+            <div className="row">{renderTopcloth()}</div>
+          </div>
+          <div className="tab-pane container fade" id="tabBotClothes">
+            <div className="row">{renderBotcloth()}</div>
+          </div>
+          <div className="tab-pane container fade" id="tabShoes">
+            <div className="row">{renderShoes()}</div>
+          </div>
+          <div className="tab-pane container fade" id="tabHandBags">
+            <div className="row">{renderHandbags()}</div>
+          </div>
+          <div className="tab-pane container fade" id="tabUploadClothes">
+            <div className="row">{renderUploadClothes()}</div>
+          </div>
         </div>
-        <div className="tab-pane container fade" id="tabBotClothes">
-          <div className="row w-100">{renderBotcloth()}</div>
-        </div>
-        <div className="tab-pane container fade" id="tabShoes">
-          <div className="row w-100">{renderShoes()}</div>
-        </div>
-        <div className="tab-pane container fade" id="tabHandBags">
-          <div className="row w-100">{renderHandbags()}</div>
-        </div>
-      </div>
-    </Col>
+      </Col>
+ 
   );
 }

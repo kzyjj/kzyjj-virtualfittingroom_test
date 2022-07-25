@@ -40,43 +40,6 @@
   position: relative;
   background-image: url("DRESSING ROOM.jpg");
 }
-.bikinitop {
-  width: 500px;
-  height: 500px;
-  position: relative;
-  top: 12%;
-  left: 22%;
-  z-index: 1;
-}
-
-.bikinibottom {
-  width: 500px;
-  height: 500px;
-  position: relative;
-  top: 12%;
-  left: 22%;
-  z-index: 1;
-}
-
-.handbag {
-  width: 500px;
-  height: 1000px;
-  position: relative;
-  bottom: -40.5%;
-  right: -3.5%;
-  transform: scale(0.5);
-  z-index: 4;
-}
-
-.feet {
-  width: 500px;
-  height: 500px;
-  position: relative;
-  bottom: -37%;
-  right: -3.5%;
-  transform: scale(0.5);
-  z-index: 1;
-}
 
 /* END MODEL */
 
